@@ -13,7 +13,7 @@ import { remarkReadingTime } from './src/plugins/remark-reading-time.mjs'
 export default defineConfig({
   site: 'https://scofield626.github.io/',
   integrations: [mdx(), sitemap(), tailwind(), react()],
-  base:'/scofield-zliu',
+  base:'/',
   vite: {
     ssr: {
       external: ['svgo']
