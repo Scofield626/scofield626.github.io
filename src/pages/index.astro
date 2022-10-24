@@ -1,0 +1,75 @@
+---
+import BaseHead from '../components/BaseHead.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import Button from '../components/Button.astro'
+
+import { SITE_TITLE, SITE_DESCRIPTION } from '../config'
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <main>
+      <div class="flow-root">
+        <div class="float-left hidden md:block">
+          <pre
+            class="my-0 py-0"><span class="text-orange-600">$ echo </span>"I'll join Imperial College London in Jan 2023!"</pre>
+          <pre
+            class="my-0 py-0"><span class="text-orange-600">$ echo </span>"PhD Topic: Latency-Critical Datacenter Systems"</pre>
+          <pre
+            class="my-0 py-0"><span class="text-orange-600">$ echo </span>"Please reach out to me if you come around 🤙"</pre>
+          <br>
+          <div>
+            </content><Button title="Button 1" />   
+          </div>
+        </div>
+        <div
+          class="float-right rounded-full shadow-md shadow-neutral-600 mr-10"
+        >
+          <img class="rounded-full h-auto max-w-[120px]" src="/scofield-zliu.jpg" onmouseover="this.src='/scofield_tri.jpg';" onmouseout="this.src='/scofield-zliu.jpg';"/>
+        </div>
+      </div>
+      <h2
+        class="text-lg font-bold mb-6 underline underline-offset-8 decoration-4 decoration-blue-800"
+      >
+        About
+      </h2>
+      <p>
+        I am an incoming Ph.D. student at <a href="https://lsds.doc.ic.ac.uk/">Large-Scale Data & Systems Group</a> of Imperial College London, 
+        advised by <a href="https://marioskogias.github.io/">Prof. Marios Kogias</a>. I obtained M.S. (with distinction) from École Polytechnique (France) in 2022,
+        where I was supervised by <a href="https://www.thomasclausen.net/">Prof. Thomas Clausen</a> and Prof. Juan Antonio Cordero Fuertes from Network Research Group. 
+        Prior to that, I spent three wonderful undergrad years in South China University of Technology (2017-2020).
+      </p>
+      <p>
+        Before joining Imperial, I was fortunate to work with <a href="https://lip6.fr/Marc.Shapiro/">Prof. Marc Shapiro</a>,
+         the inventor of Proxy and CRDTs, during which we revisited distributed abstractions for modern query processing systems. 
+        I did my master internship at Max-Planck Institute for Informatics (MPI-INF) with <a href="https://sites.google.com/view/yitingxia/home">Prof. Yiting Xia</a>,
+         where we built optical datacenter networks using state-of-the-art programmable switches and SmartNICs.
+         My very first research project, reproducing a failure-reroute protocol using P4, was done with <a href="https://www.romainjacob.net/">Dr. Romain Jacob</a> 
+         in Networked System Group (ETHz), led by <a href="https://nsg.ee.ethz.ch/people/laurent-vanbever/">Prof. Laurent Vanbever</a>.
+      </p>
+      <p>
+        My research interests lie in Computer Systems and Networking, with a focus on data center systems, in-network compute, and concurrent programming. 
+      </p>
+      <h2
+        class="text-lg font-bold mb-6 underline underline-offset-8 decoration-4 decoration-orange-900"
+      >
+
+      <h2
+        class="mt-8 text-lg font-bold mb-6 underline underline-offset-8 decoration-4 decoration-blue-800"
+      >
+        Contact
+      </h2>
+      <a href="mailto:scofield_zliu@outlook.com">Email</a> | <a href="https://www.linkedin.com/in/zhengqing-liu-728ba61b8/">LinkedIn</a> 
+      | <a href="<a href="https://twitter.com/ZhengqingLiu?ref_src=twsrc%5Etfw">Twitter</a> | 
+      <a href="https://github.com/Scofield626">GitHub</a> 
+    </main>
+    <br />
+    <Footer />
+  </body>
+</html>

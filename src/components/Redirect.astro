@@ -1,0 +1,18 @@
+---
+export interface Props {
+  redirectTo: string
+}
+const { redirectTo } = Astro.props
+
+import { SITE_TITLE, SITE_DESCRIPTION } from '../config'
+---
+
+<!-- Global Metadata -->
+<meta charset="utf-8" />
+<link rel="icon" type="image/png" href="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/ol2lcon3zrdrcu6v1jo7" />
+
+<!-- Primary Meta Tags -->
+<title>Redicting...</title>
+<meta name="title" content={SITE_TITLE} />
+<meta name="description" content={SITE_DESCRIPTION} />
+<meta http-equiv="refresh" content={`0; url=${redirectTo}`} />

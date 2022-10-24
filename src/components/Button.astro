@@ -1,0 +1,62 @@
+---
+// Click button, get confetti!
+// Styled by Tailwind :)
+---
+
+<div>
+	<div>	
+		<p>
+			🏛️ Previous at
+		</p>
+	</div>
+
+	<button 
+		onclick="window.open('https://www.mpi-inf.mpg.de/home/');"
+		class="py-1.5 px-1.5 bg-green-700 text-white rounded-lg shadow-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-opacity-75"
+	>
+		<slot />MPI-INF
+	</button>
+	<button 
+		onclick="window.open('https://www.inria.fr/en');"
+		class="py-1.5 px-1.5 bg-red-600 text-white rounded-lg shadow-md hover:bg-red-500 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-75"
+	>
+		<slot />INRIA
+	</button>
+
+	<button 
+		onclick="window.open('https://ethz.ch/en.html');"
+		class="py-1.5 px-1.5 bg-blue-800 text-white rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-opacity-75"
+	>
+		<slot />ETHz
+	</button>
+	<button 
+		onclick="window.open('https://www.polytechnique.edu/');"
+		class="py-1.5 px-1.5 bg-purple-800 text-white rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-opacity-75"
+	>
+		<slot />L'X
+	</button>
+	<button 
+		onclick="window.open('https://www.scut.edu.cn/en/');"
+		class="py-1.5 px-1.5 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-opacity-75"
+	>
+		<slot />SCUT
+	</button>
+</div>
+
+<script>
+
+</script>
+
+<style>
+	button {
+		font-size:10px;
+	}
+	p {
+		font-size:15px;
+		font-family: Comic sans MS;
+		white-space:nowrap;
+	}
+	div {
+		display: inline-block;
+	}
+</style>

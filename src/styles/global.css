@@ -1,0 +1,125 @@
+/*
+  The CSS in this style tag is based off of Bear Blog's default CSS.
+  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
+  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
+ */
+@tailwind components;
+
+@layer components {
+  p {
+    @apply my-4;
+  }
+  /* a {
+    @apply hover:underline underline-offset-4 hover:bg-orange-200;
+  } */
+
+  a {
+    @apply relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+              before:bottom-[-1px] before:left-0 before:bg-blue-900
+              before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+              before:transition before:ease-in-out before:duration-300;
+  }
+
+  h2 {
+    @apply text-lg my-8 font-bold underline underline-offset-8 decoration-4 decoration-orange-900;
+  }
+  h3 {
+    @apply text-base my-4 font-bold;
+  }
+  h4 {
+    @apply text-base my-4 font-bold italic;
+  }
+
+  ul {
+    @apply list-disc px-6;
+  }
+
+  ol {
+    @apply list-decimal px-6;
+  }
+
+  table {
+    overflow-x: scroll;
+    display: block;
+    /* @apply sm:relative sm:left-[50%] sm:translate-x-[-50%] sm:table sm:w-[100%] sm:text-sm; */
+    @apply sm:relative sm:table sm:w-[100%] sm:text-sm;
+    @apply my-6 shadow-md;
+  }
+  th {
+    @apply bg-gray-50 p-2;
+  }
+  tr td {
+    @apply p-1;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  @apply bg-gray-200;
+}
+
+body::-webkit-scrollbar-thumb {
+  @apply bg-gray-800;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: auto;
+  padding: 20px;
+  max-width: 75ch;
+  text-align: left;
+  background-color: #fff;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.5;
+  color: #444;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+  color: #222;
+}
+a {
+  color: #3273dc;
+}
+nav a {
+  margin-right: 10px;
+}
+textarea {
+  width: 100%;
+  font-size: 16px;
+}
+input {
+  font-size: 16px;
+}
+content {
+  line-height: 1.6;
+}
+table {
+  width: 100%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+blockquote {
+  border: 1px solid #999;
+  color: #222;
+  padding: 2px 0px 2px 20px;
+  margin: 0px;
+  font-style: italic;
+}
+
+/* A fix to https://github.com/ant-design/ant-design/issues/25900 */
+.anticon {
+  vertical-align: middle;
+}
