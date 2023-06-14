@@ -21,7 +21,7 @@
   }
 
   h2 {
-    @apply text-lg my-8 font-bold underline underline-offset-8 decoration-4 decoration-orange-900;
+    @apply text-lg my-8 font-bold underline underline-offset-8 decoration-4 decoration-blue-800;
   }
   h3 {
     @apply text-base my-4 font-bold;
