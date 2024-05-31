@@ -3,5 +3,5 @@
 
 export const SITE_TITLE = 'Scofield Z.Q. Liu'
 export const SITE_DESCRIPTION = "Scofield's personal website!"
-export const CV_PATH = '/CV_Scofield_06_23.pdf'
+export const CV_PATH = '/CV_scofield.pdf'
 export const BLOG_PATH = "https://scofield-liew.bearblog.dev/"
